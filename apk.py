@@ -39,7 +39,7 @@ chamados = [
 for chamado in chamados:
     data = {
         "customer_id": CUSTOMER_ID,
-        "customer_id_type": "I",
+        "customer_id_type": "I_ou_E",  # I-chamado interno, E-via email
         "department_id": DEPARTMENT_ID,
         "subject": chamado["subject"],
         "message": f"{chamado['message']}\n\nGerado automaticamente em {datetime.now().strftime('%d/%m/%Y %H:%M')}.",
